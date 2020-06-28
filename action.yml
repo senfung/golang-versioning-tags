@@ -1,0 +1,16 @@
+name: 'Golang version auto tagging'
+description: 'Bump and push git tag on merge'
+author: 'Felix Hui'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+outputs:
+  new_tag:
+    description: 'Generated tag'
+  tag:
+    description: 'The latest tag after running this action'
+  part:
+    description: 'The part of version which was bumped'
+branding:
+  icon: 'github'  
+  color: 'blue'
